@@ -4,7 +4,7 @@ require ("../includes/dbconnect10.php");
 if (!isset($_POST['uname'])){
 	$_SESSION = array();
 	// create form for login here
-	echo <<<EOT
+	echo <<<HTML
 <html>
 <body>
 <form name='lab 10a.php' action='lab10a.php' method='POST'>
@@ -18,7 +18,7 @@ Please login
 <tr><td><input type='submit' name='logbtn' value='Login'></td></tr>
 </table>
 <a href=lab10b.php>Click here to create an account</a>
-EOT;
+HTML;
 }
 else{ //process login data to authenticate user
 

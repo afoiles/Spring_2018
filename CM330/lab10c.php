@@ -9,7 +9,7 @@ if (!isset($_SESSION['auth']) || $_SESSION['auth']==false || isset($_POST['logou
 }
 else
 {
-	echo <<<EOT
+	echo <<<HTML
 <html>
 <body>
 <form name='lab 10c.php' action='lab10a.php' method='POST'>
@@ -26,7 +26,7 @@ PHP Coder's Club Membership Roster<h2>
 <th>Phone</th>
 <th>Email</th>
 </tr>
-EOT;
+HTML;
 	//Display membership page
 	//connect to database
 	//query DB and print results in table

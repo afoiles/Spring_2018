@@ -3,14 +3,52 @@ session_start();
 if (empty($_POST['captcha_code'])){
 
 //declare variables for form data and set to empty
+$fname = 	null;
+$lname = 	null;
+$address = 	null;
+$city = 	null;
+$state = 	null;
+$zip = 		null;
+$email = 	null;
+$phone = 	null;
+$dob = 		null;
+$password = null;
+$passck = 	null;
+
 //if $_SESSION variables set, assign values to variable
-
-		
-
+if(isset($_SESSION)){
+	$fname = 	$_SESSION['fname'];
+	$lname = 	$_SESSION['lname'];
+	$address = 	$_SESSION['address'];
+	$city = 	$_SESSION['city'];
+	$state = 	$_SESSION['state'];
+	$zip = 		$_SESSION['zip'];
+	$email = 	$_SESSION['email'];
+	$phone = 	$_SESSION['phone'];
+	$dob = 		$_SESSION['dob'];
+	$password = $_SESSION['password'];
+	$passck = 	$_SESSION['passck'];
+}
 
 // Add form fields here for new member information ****
-
-
+echo <<<HTML
+<html>
+<body>
+<form name='lab 10b.php' action='lab10b.php' method='POST'>
+<h2 style='text-align:left'>
+Welcome to the PHP Coder's Club New Member Form<h2>
+Please provide the following information<br>
+First Name: <input type='text' name='fname'> Last Name: <input type='text' name='lname'><br>
+Address:    <input type='text' name='address'><br>
+City:       <input type='text' name='city'> State: <input type='text' name='state'> Zip: <input type='text' name='zip'><br>
+Email:      <input type='text' name='email'><br>
+Phone:      <input type='text' name='phone'><br>
+DOB:        <input type='text' name='dob'><br>
+			Password: <input type='password' name='password'><br>
+   Re-enter Password: <input type='text' name='passck'><br>
+</body>
+</html>
+HTML;
 
 //end of form************************************ 
 
