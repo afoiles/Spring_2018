@@ -1,0 +1,46 @@
+
+h2 {
+	font-family:verdana;
+	color: #002C77;
+	font-size:24px;
+	padding:10px;
+	text-align:center;
+}
+table, th, td {
+	border: 2px solid darkorange;
+	border-width: 2px;
+	border-style: double;
+	border-collapse: collapse;
+	width: 290px;
+	padding: 4px;
+	background-color: lightblue;
+}
+th {
+	
+	font-family:verdana;
+	
+	
+}
+body {
+
+	background-color: #035642;
+	
+	}
+#acol {
+	text-align: right;
+}
+div {
+	
+	 margin: 0 auto;
+     width: 310px; 
+
+	
+}
+a:link {
+	
+	text-decoration: none;
+}
+a:hover {
+	
+	color: SlateBlue;
+}

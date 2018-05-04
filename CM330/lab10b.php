@@ -100,5 +100,6 @@ else //Process Form  data
 		
 		//provide a button to send to login page
 	
-
+	}
+}
 ?>
